@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Foodar Food Delivery</title>
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
+    <style>
+      #banner  {
+        background-image: url('./images/banner-background.jpeg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: 0;
+      }
+      header {
+        width: 90%;
+        left: 5%;
+        font-size: 1.25rem;
+      }
+      form  {flex-direction: row;
+      }
+      button  {margin: 1.5rem;}
+    </style>
+  </head>
+  <body>
+    <header>
+      <h3>Foodar</h3>
+      <nav>
+        <ul>
+          <a href="./index.html"><li>Home</li></a>
+          <a href="./about.html"><li>About Foodar</li></a>
+          <a href="./register.html"><li>Register Now</li></a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="banner">
+        <div class="banner-title">
+          <h1>Foodar</h1>
+          <h2>Your Food. Delivered.</h2>
+        </div>
+        <div class="banner-content">
+          <h2>Find a driver near you!</h2>
+          <p>Type in your 5-digit zipcode below and click "Go!" to find a driver near you.</p>
+          <form>
+            <input type='number' min="10000" max="99999"><br>
+            <button type='submit'>Go!</button>
+          </form>
+        </div>
+      </section>
+      <section id="services">
+        <div class="service-content">
+          <img src="./images/order-online.jpeg" alt="woman ordering online"/>
+          <div class="service-text">
+            <h3>Pick What You Want</h3>
+            <p>Want your favorite chicken sandwich or italian cuisine but don't want to fight traffick or put down what you're doing? You don't have to do either! Just order what you want and we'll find the closed drive to deliver your meal!</p>
+          </div>
+        </div>
+        <div class="service-content">
+          <img src="./images/pay-phone.jpg" alt="man paying by phone"/>
+          <div class="service-text">
+            <h3>Pay on your Phone</h3>
+            <p>Pay directly from the Foodar Delivery App. No need to worry about a cash tip upon delivery; it's all on the app! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec odio eros, commodo sit amet molestie non, ultricies vitae lectus. Nulla a urna ut lectus scelerisque fringilla et non mi. I</p>
+          </div>
+        </div>
+        <div class="service-content">
+          <img src="./images/food-driver.jpeg" alt="man delivering food"/>
+          <div class="service-text">
+            <h3>Never Leave Your Home!</h3>
+            <p>Eat the food you want without having to get dressed up and leave your house! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec odio eros, commodo sit amet molestie non, ultricies vitae lectus. Nulla a urna ut lectus scelerisque fringilla et non mi. I</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <p>&copy; 2018 Foodar, Inc.</p>
+        <nav>
+          <h4>Site Map</h4>
+          <ul>
+            <a href="./index.html"><li>Home</li></a>
+            <a href="./about.html"><li>About Foodar</li></a>
+            <a href="./register.html"><li>Register Now</li></a>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

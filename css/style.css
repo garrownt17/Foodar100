@@ -1,0 +1,267 @@
+/*All images found are CC0, found on Pexels.com*/
+
+html  {
+  font-size: 16px;
+  font-family: Calibri, san-serif;
+}
+
+body  {
+  width: 100%;
+  margin: 0 auto;
+}
+/*global tags*/
+h1, h2, h3, h4  {
+  font-family: Garamond, serif;
+}
+
+a {
+  text-decoration: none;
+  color: darkgray;
+  transition: font-size .25s, color .25s;
+}
+
+a:hover {
+  font-size: 115%;
+  color: black;
+}
+
+/*header elements*/
+header  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  height: 5rem;
+  margin: 0 auto;
+  z-index: 10;
+  background-color: white;
+}
+
+header h3 {
+  font-size: 2.5rem;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+ul  {
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;
+  margin: 0 .75rem;
+}
+
+/*main body elements*/
+main  {
+  width: 100%;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  top: 5rem;
+}
+
+/*index banner*/
+#banner {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.banner-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  text-align: center;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-around;
+  text-align: center;
+  background-color: rgba(255,255,255,.85);
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 15px;
+  border: 3px outset;
+}
+
+.banner-title h1 {
+  font-size: 4rem;
+  margin: .125rem 0;
+  color: white;
+}
+
+.banner-title h2  {
+  font-size: 3rem;
+  margin: 0;
+  color: #CCC;
+}
+
+.sub-banner {
+  height: 15rem;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#services {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+  margin: 4rem auto 0;
+
+}
+
+.service-content  {
+  width: 30%;
+  min-width: 15rem;
+  max-width: 20rem;
+  min-heigh: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.service-content img  {
+  min-width: 17rem;
+  max-width: 20rem;
+  max-height: 14rem;
+}
+
+.service-content img, .service-content p  {
+  width: 90%;
+  border-radius: 10px;
+  height: auto;
+}
+
+@media only screen and (max-width: 950px)  {
+  #services {
+    flex-direction: column;
+  }
+
+  .service-content  {
+    width: 90%;
+    flex-direction: row;
+    margin: 1rem auto;
+  }
+
+  .service-text {
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .service-content img {
+    display: none;
+  }
+}
+/*Register.html Form style*/
+fieldset  {
+  margin-bottom: 1rem;
+  border-color: navy;
+  border-radius: 10px;
+  padding: 1rem;
+  min-width: 19rem;
+}
+
+form  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+#form label  {
+  display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-end;
+  margin: 0.5rem 2rem;
+
+}
+
+input {
+  margin-left: .25rem;
+}
+
+.buttons  {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+button  {
+  padding: .25rem 1rem;
+  background-color: navy;
+  color: white;
+  min-width: 8rem;
+}
+
+@media only screen and (max-width: 800px) {
+  #form {
+    flex-direction: column;
+  }
+}
+
+/*Footer content*/
+footer {
+  background: url("../images/footer-background.jpeg");
+  background-position: center 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+    position: relative;
+  top: 7rem;
+  color: white;
+}
+
+footer  div {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+  width: 85%;
+  height: 35vh;
+  margin: 0 auto;
+
+}
+
+footer nav ul  {
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  padding-left: 0;
+  margin: .125rem 0;
+}
+
+footer nav h4 {
+  margin-bottom: 0;
+}
+
+footer a  {
+  color: white;
+}
+
+footer a:hover  {
+  font-size: 100%;
+  color: red;
+}
