@@ -163,6 +163,7 @@ main  {
 
 .sub-banner {
   height: 15rem;
+
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -177,10 +178,10 @@ main  {
   #banner h2  {
     font-size: 1.8rem;
   }
-}
 
-.banner-content {
-  width: 80%;
+  .banner-content {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 850px) {
@@ -189,12 +190,14 @@ main  {
     border-radius: 0;
   }
 }
+
 /*under-banner content*/
 #register-form, #about-text  {
   width: 90%;
   margin: 0 auto;
 }
 
+/*index.html elements*/
 #services {
   display: flex;
   flex-direction: column;
@@ -244,7 +247,28 @@ main  {
   width: 90%;
 }
 
+/*about.html elements*/
+.text-group {
+  text-align: center;
+  margin: 1rem auto 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px black solid;
+  width: 60%;
+}
+
+.text-group:last-child  {
+  margin-bottom: 4rem;
+}
+.text-group p {
+  margin-left: 0.5rem;
+}
+
 @media only screen and (max-width: 1050px)  {
+  main {
+    top: 9rem;
+    min-height: 40rem;
+  }
+
   #banner {
     height: 35rem;
   }
@@ -280,13 +304,12 @@ main  {
 
   .service-text {
     margin-left: 2rem;
+    font-size: .8rem;
   }
 }
 
 @media only screen and (max-width: 700px) {
-  main {
-    top: 9rem;
-  }
+
   .service-content img {
     display: none;
   }
