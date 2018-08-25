@@ -13,7 +13,7 @@ body  {
 
 @media only screen and (max-width: 1050px)  {
   html  {
-    font-size: 18px;
+    font-size: 24px;
   }
 }
 /*global tags*/
@@ -60,6 +60,7 @@ header h1 {
 }
 
 ul  {
+  display: flex;
   text-decoration: none;
   list-style-type: none;
   text-align: center;
@@ -79,9 +80,31 @@ header nav ul li {
     width: 9rem;
   }
 
-  nav {
-    width: 30%;
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
     font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 850px)  {
+  header  {
+    flex-direction: column;
+    height: auto;
+  }
+
+  header h1 {
+    font-size: 1.25rem;
+  }
+
+  header img  {
+    width: 6rem;
+  }
+
+  nav ul  {
+    font-size: .8rem;
+    flex-direction: row;
   }
 }
 /*main body elements*/
@@ -222,6 +245,9 @@ main  {
 }
 
 @media only screen and (max-width: 700px) {
+  main {
+    top: 9rem;
+  }
   .service-content img {
     display: none;
   }
@@ -237,7 +263,7 @@ fieldset  {
   border-color: navy;
   border-radius: 10px;
   padding: 1rem;
-  min-width: 20rem;
+  width: 40%;;
 }
 
 form  {
@@ -279,12 +305,25 @@ button  {
   padding: .25rem 1rem;
   background-color: navy;
   color: white;
-  min-width: 8rem;
+  width: 4rem;
 }
 
 @media only screen and (max-width: 1000px) {
+  fieldset {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #form label  {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: .3rem auto;
+  }
+
   #form {
     flex-direction: column;
+    width: 80%;
   }
 }
 
@@ -313,22 +352,26 @@ footer  div {
     justify-content: space-between;
     align-items: flex-start;
   width: 85%;
-  height: 7rem;
+  min-height: 7rem;
   margin: 0 auto;
+  font-size: 1rem;
 }
 
-.footer-nav {
+.footer-nav, .footer-legal {
   display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin: 0;
+    padding: 0;
 }
 
-.footer-nav ul, footer div ul  {
+.footer-nav ul, .footer-legal ul   {
   display: flex;
     flex-direction: column;
     align-items: flex-start;
   padding-left: 0;
   margin: .125rem 0;
+  font-size: 1rem;
 }
 
 .footer-nav p, footer h4 {
@@ -344,9 +387,18 @@ footer div a:hover  {
   color: yellow;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 850px) {
+  footer  {
+    min-height: 10rem;
+    top: 10rem;
+  }
   footer div  {
-    flex-direction: column;
+    flex-direction: row;
+    min-height: 4rem;
+    font-size: .7rem;
+  }
 
+  .footer-nav ul, .footer-legal ul {
+    font-size: .7rem;
   }
 }
