@@ -1,4 +1,5 @@
 /*All images found are CC0, found on Pexels.com*/
+@import url('https://fonts.googleapis.com/css?family=Merienda:400,700');
 
 html  {
   font-size: 16px;
@@ -11,7 +12,7 @@ body  {
 }
 /*global tags*/
 h1, h2, h3, h4  {
-  font-family: Garamond, serif;
+  font-family: Merienda, Garamond, serif;
 }
 
 a {
@@ -130,12 +131,25 @@ main  {
 
 #services {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-around;
   width: 90%;
-  minheight: 57vh;
-  margin: 4rem auto 1rem;
+  min-height: 65vh;
+  margin: 2rem auto 1rem;
 
+}
+
+#services h1  {
+  font-size: 3rem;
+  letter-spacing: 5px;
+}
+
+.service  {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .service-content  {
@@ -146,23 +160,24 @@ main  {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-shrink: 2;
   border-radius: 15px;
 }
 
 .service-content img  {
-  min-width: 17rem;
-  max-width: 20rem;
-  max-height: 14rem;
+  width: 100%;
+  max-width: 23rem;
+  max-height: 16rem;
+  border-radius: 10px;
+
 }
 
-.service-content img, .service-content p  {
+.service-content p  {
   width: 90%;
-  border-radius: 10px;
-  height: auto;
 }
 
 @media only screen and (max-width: 950px)  {
-  #services {
+  .service {
     flex-direction: column;
   }
 
@@ -171,6 +186,10 @@ main  {
     max-width: initial;
     flex-direction: row;
     margin: 1rem auto;
+  }
+
+  .service-content img  {
+    width: 50%;
   }
 
   .service-text {
@@ -187,6 +206,7 @@ main  {
 @media only screen and (max-width: 600) {
 
 }
+
 /*Register.html Form style*/
 fieldset  {
   margin-bottom: 1rem;
@@ -253,19 +273,23 @@ footer {
     position: relative;
   top: 7rem;
   color: white;
+  min-height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer  div {
   display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   width: 85%;
-  min-height: 30vh;
+  height: 7rem;
   margin: 0 auto;
 
 }
 
-footer nav ul  {
+footer div nav ul  {
   display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -273,15 +297,15 @@ footer nav ul  {
   margin: .125rem 0;
 }
 
-footer nav h4 {
+footer div nav p {
   margin-bottom: 0;
 }
 
-footer a  {
+footer div a  {
   color: white;
 }
 
-footer a:hover  {
+footer div a:hover  {
   font-size: 100%;
   color: red;
 }
