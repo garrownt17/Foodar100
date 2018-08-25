@@ -187,6 +187,8 @@ main  {
 #services h1  {
   font-size: 3rem;
   letter-spacing: 5px;
+  margin: .5rem auto;
+  text-align: center;
 }
 
 .service  {
@@ -224,8 +226,19 @@ main  {
   #banner {
     height: 35rem;
   }
+
+  #services {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  #services h1  {
+    font-size: 1.64rem;
+  }
+
   .service {
     flex-direction: column;
+    align-items: center;
   }
 
   .service-content  {
@@ -237,6 +250,10 @@ main  {
 
   .service-content img  {
     width: 50%;
+  }
+
+  .service-content h3 {
+    font-size: 1.2rem;
   }
 
   .service-text {
