@@ -118,7 +118,7 @@ main  {
 
 }
 
-/*index banner*/
+/*All banner Content*/
 #banner {
   height: 40rem;
   width: 100%;
@@ -143,6 +143,7 @@ main  {
   text-align: center;
   background-color: rgba(255,255,255,.85);
   width: 60%;
+  max-width: 40rem;
   margin: 0 auto;
   border-radius: 15px;
   border: 3px outset;
@@ -168,6 +169,27 @@ main  {
   background-repeat: no-repeat;
 }
 
+@media only screen and (max-width: 1050px)  {
+  #banner h1:first-child  {
+    font-size: 2.5rem;
+  }
+
+  #banner h2  {
+    font-size: 1.8rem;
+  }
+}
+
+.banner-content {
+  width: 80%;
+}
+
+@media only screen and (max-width: 850px) {
+  .banner-content {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+/*under-banner content*/
 #register-form, #about-text  {
   width: 90%;
   margin: 0 auto;
