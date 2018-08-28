@@ -95,7 +95,8 @@ header nav ul li {
 
 @media only screen and (max-width: 1050px)  {
   header h1 {
-    font-size: 1.5rem;
+    font-size: 1.65rem;
+    margin: .2rem auto 1.25rem;
   }
 
   header img  {
@@ -116,14 +117,6 @@ header nav ul li {
     height: auto;
   }
 
-  header h1 {
-    font-size: 1.25rem;
-  }
-
-  header img  {
-    width: 6rem;
-  }
-
   nav ul  {
     font-size: .8rem;
     flex-direction: row;
@@ -138,6 +131,18 @@ main  {
   position: relative;
   top: 6rem;
 
+}
+
+@media only screen and (max-width: 1050px) {
+  main {
+    min-height: 40rem;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  main {
+    top: 7rem;
+  }
 }
 
 /*All banner Content*/
@@ -222,32 +227,38 @@ main  {
 }
 
 /*index.html elements*/
-#services {
+#services, #promos {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   width: 90%;
-  min-height: 35rem;
   margin: 2rem auto 1rem;
 
 }
 
-#services h1  {
+#services h1, #promos h1  {
   font-size: 3rem;
   letter-spacing: 5px;
   margin: .5rem auto;
   text-align: center;
 }
 
-.service  {
+#promos h2  {
+  font-size: 1.75rem;
+  letter-spacing: 4px;
+  margin: .25rem auto ;
+  text-align: center;
+}
+
+.section-content  {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.service-content  {
+.service-content, .promo-content  {
   width: 30%;
   min-width: 15rem;
   max-width: 20rem;
@@ -259,12 +270,12 @@ main  {
   border-radius: 15px;
 }
 
-.service-content img  {
+.service-content img, .promo-content img  {
   width: 100%;
   max-width: 23rem;
   max-height: 16rem;
   border-radius: 10px;
-
+  background-color: black;
 }
 
 .service-content p  {
@@ -288,64 +299,54 @@ main  {
 }
 
 @media only screen and (max-width: 1050px)  {
-  main {
-    min-height: 40rem;
-  }
-
   #banner {
     height: 35rem;
   }
 
-  #services {
+  #services, #promos {
     flex-direction: column;
     align-content: center;
   }
 
-  #services h1  {
+  #services h1, #promos h1  {
     font-size: 1.64rem;
   }
 
-  .service {
+  #promos h2  {
+    font-size: 1rem;
+  }
+
+  .section-content {
     flex-direction: column;
     align-items: center;
   }
 
-  .service-content  {
+  .service-content, .promo-content  {
     width: 90%;
     max-width: initial;
     flex-direction: row;
     margin: 1rem auto;
   }
 
-  .service-content img  {
+  .service-content img, .promo-content img  {
     width: 50%;
   }
 
-  .service-content h3 {
+  .service-content h3, .promo-content h3 {
     font-size: 1.2rem;
   }
 
-  .service-text {
+  .service-text, .promo-text {
     margin-left: 2rem;
     font-size: .8rem;
   }
 }
 
-@media only screen and (max-width: 850px) {
-  main  {
-    top: 9rem;
-  }
-}
-
 @media only screen and (max-width: 700px) {
 
-  .service-content img {
+  .service-content img, .promo-content img {
     display: none;
   }
-}
-
-@media only screen and (max-width: 600) {
-
 }
 
 /*request form style*/

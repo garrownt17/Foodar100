@@ -17,7 +17,7 @@
     <script>
       function openPreHeader() {
         document.getElementById("preHeader").style.height = "2.5rem";
-        document.getElementById("preHeader").style.position = "fixed"; 
+        document.getElementById("preHeader").style.position = "fixed";
       }
       setTimeout(openPreHeader, 5000);
 
@@ -30,7 +30,7 @@
     <!--Over-Header advertisement banner. Disappears after 20s or upon button click-->
     <div id="preHeader">
       <div id="headAdvert">
-        <p>Today's Special Offer: <span id="dailyOffer">$1 Off Sit-down meals!</span></p>
+        <p>Today's Special Offer: <span id="dailyOffer">Save up to 25% on select Sit-down meals!</span></p>
         <button id="closeHeader" onclick="closeAdvert()">Close Daily Offer</button>
       </div>
     </div>
@@ -61,7 +61,7 @@
       </section>
       <section id="services">
         <h1>How It Works!</h1>
-        <div class="service">
+        <div class="section-content">
           <div class="service-content">
             <img src="./images/order-online.jpeg" alt="woman ordering online"/>
             <div class="service-text">
@@ -82,6 +82,33 @@
             <div class="service-text">
               <h3>3. Your Food is Delivered!</h3>
               <p>Eat the food you want without having to get dressed up and leave your house! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec odio eros, commodo sit amet molestie non, ultricies vitae lectus. Nulla a urna ut lectus scelerisque fringilla et non mi. I</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="promos">
+        <h1>Special Offers</h1>
+        <h2>Save up to 25% on these orders, Today Only!</h2>
+        <div class="section-content">
+          <div class="promo-content">
+            <img src="./images/apple.jpeg" alt="Promo Restaurant 1"/>
+            <div class="promo-text">
+              <h3>Applebee's</h3>
+              <p>Save 15% on your total order, or get a free appetizer, by entering promo code "nathaniscool" when you submit your quote.</p>
+            </div>
+          </div>
+          <div class="promo-content">
+            <img src="./images/chili.jpeg" alt="Promo Restaurant 1"/>
+            <div class="promo-text">
+              <h3>Chili's</h3>
+              <p>Save 25% on your total order by entering promo code "nathanisthebest" when you submit your quote.</p>
+            </div>
+          </div>
+          <div class="promo-content">
+            <img src="./images/pancake.jpeg" alt="Promo Restaurant 1"/>
+            <div class="promo-text">
+              <h3>IHOP</h3>
+              <p>Save 20% on your total order by entering promo code "nathanpreferspancakestowaffles" when you submit your quote.</p>
             </div>
           </div>
         </div>
