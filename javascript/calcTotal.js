@@ -29,7 +29,7 @@ function calculateTotal(){
 }
 
 function resetForm()  {
-  var result = null;
+  var result = 0.00;
   var totalElem = document.getElementById('totalCost');
   totalElem.innerHTML = result;
 }
