@@ -16,14 +16,15 @@
     </style>
     <script>
       function openPreHeader() {
-        document.getElementById("preHeader").style.height = "2.5rem";
+        document.getElementById("preHeader").style.height = "10vh";
         document.getElementById("preHeader").style.visibility = "visible";
         document.getElementById("preHeader").style.position = "fixed";
       }
       setTimeout(openPreHeader, 5000);
 
       function closeAdvert() {
-        document.getElementById("preHeader").style.display = "none";
+        document.getElementById("preHeader").style.height = "0";
+        document.getElementById("preHeader").style.visibility = "hidden";
       }
     </script>
   </head>
