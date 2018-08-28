@@ -14,10 +14,25 @@
       }
       button  {margin: 1.5rem;}
     </style>
+    <script>
+      function openPreHeader() {
+        document.getElementById("preHeader").style.height = "2.5rem";
+        document.getElementById("preHeader").style.position = "fixed"; 
+      }
+      setTimeout(openPreHeader, 5000);
+
+      function closeAdvert() {
+        document.getElementById("preHeader").style.display = "none";
+      }
+    </script>
   </head>
   <body>
-    <div id="headAdvert">
-      <p>This site belongs to the web porfolio of Nathan Garrow and is based of the RevaturePro project, Foodar 100. See "About Foodar" for more information. </p>
+    <!--Over-Header advertisement banner. Disappears after 20s or upon button click-->
+    <div id="preHeader">
+      <div id="headAdvert">
+        <p>Today's Special Offer: <span id="dailyOffer">$1 Off Sit-down meals!</span></p>
+        <button id="closeHeader" onclick="closeAdvert()">Close Daily Offer</button>
+      </div>
     </div>
     <header>
         <img src="./images/logo.png" alt="Foodar Logo"/>
@@ -73,7 +88,7 @@
       </section>
     </main>
     <footer>
-      <div>
+      <div id="footer">
         <nav class="footer-nav">
           <p>Site Map</p>
           <ul>
@@ -90,6 +105,10 @@
         </ul>
         <h4>Have a great day!</h4>
       </div>
+      <div id="footAdvert">
+        <p>This site belongs to the web porfolio of Nathan Garrow and is based of the RevaturePro project, Foodar 100. See "About Foodar" for more information. </p>
+      </div>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
