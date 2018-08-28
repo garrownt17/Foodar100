@@ -12,15 +12,10 @@
   </head>
   <body>
     <header>
-      <h1>Registration</h1>
-      <a href="./index.html"><img src="./images/logo.png" alt="Foodar Logo"/></a>
-      <nav>
-        <ul>
-          <a href="./index.html"><li>Home</li></a>
-          <a href="./about.html"><li>About Foodar</li></a>
-          <a href="./register.html"><li>Register Now</li></a>
-        </ul>
-      </nav>
+      <header>
+        <a href="./index.html"><img src="./images/logo.png" alt="Foodar Logo"/></a>
+        <h1>Registration</h1>
+      </header>
     </header>
     <main>
       <section class="sub-banner">
@@ -33,20 +28,20 @@
           <div id="form">
             <fieldset>
               <legend>Log-In Details</legend>
-              <label>Email: <input required name="email"/></label>
-              <label>Password: <input required type="password" name="password"/></label>
               <label>First Name: <input required name="firstName"/></label>
               <label>Last Name: <input required name="lastName"/></label>
+              <label>Email: <input type="email" required name="email"/></label>
+              <label>Password: <input required type="password" name="password"/></label>
             </fieldset>
             <fieldset>
               <legend>Address</legend>
-              <label>Address: <input required name="address"/></label>
-              <label>Street: <input required name="street"/></label>
+              <label>Street Address:<input required name="street"/></label>
               <label>City: <input required name="city"/></label>
+              <label>State: <input required name="state"/></label>
               <label>Zipcode: <input required name="zipCode"/></label>
             </fieldset>
           </div>
-          <div class="buttons">
+          <div class="form-buttons">
             <button type="reset" value="reset">Reset</button>
             <button type="submit">Register</button>
           </div>
@@ -60,6 +55,7 @@
           <ul>
             <a href="./index.html"><li>Home</li></a>
             <a href="./about.html"><li>About Foodar</li></a>
+            <a href="./request.html"><li>Request Delivery</li></a>
             <a href="./register.html"><li>Register Now</li></a>
           </ul>
         </nav>

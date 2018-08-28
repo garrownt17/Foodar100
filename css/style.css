@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Merienda:400,700');
 
 html  {
-  font-size: 16px;
+  font-size: 18px;
   font-family: Calibri, san-serif;
 }
 
@@ -11,11 +11,6 @@ body  {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 1050px)  {
-  html  {
-    font-size: 24px;
-  }
-}
 /*global tags*/
 h1, h2, h3, h4  {
   font-family: Merienda, Garamond, serif;
@@ -28,17 +23,34 @@ a {
 }
 
 a:hover {
-  font-size: 115%;
+  font-weight: bold;
   color: rgb(191,30,46);;
 }
 
 /*header elements*/
+#headAdvert {
+  display: none;
+}
+
+@media only screen and (min-width: 850px) {
+  #headAdvert {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 2.25rem;
+    background-color: gold;
+    font-size: 16px;
+    border-bottom: 2px solid black;
+  }
+}
+
 header  {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  height: 5rem;
+  height: 4rem;
   margin: 0 auto;
   z-index: 10;
   background-color: white;
@@ -114,13 +126,14 @@ main  {
   width: 100%;
   min-height: 50rem;
   position: relative;
-  top: 5rem;
+  top: 4rem;
 
 }
 
 /*All banner Content*/
 #banner {
   height: 40rem;
+  max-height: 640px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -162,7 +175,7 @@ main  {
 }
 
 .sub-banner {
-  height: 15rem;
+  height: 10rem;
 
   width: 100%;
   background-position: center;
@@ -187,12 +200,13 @@ main  {
 @media only screen and (max-width: 850px) {
   .banner-content {
     width: 100%;
+    border: none;
     border-radius: 0;
   }
 }
 
 /*under-banner content*/
-#register-form, #about-text  {
+#register-form, #about-text, #requestForm  {
   width: 90%;
   margin: 0 auto;
 }
@@ -265,7 +279,6 @@ main  {
 
 @media only screen and (max-width: 1050px)  {
   main {
-    top: 9rem;
     min-height: 40rem;
   }
 
@@ -308,6 +321,12 @@ main  {
   }
 }
 
+@media only screen and (max-width: 850px) {
+  main  {
+    top: 9rem;
+  }
+}
+
 @media only screen and (max-width: 700px) {
 
   .service-content img {
@@ -317,6 +336,58 @@ main  {
 
 @media only screen and (max-width: 600) {
 
+}
+
+/*request form style*/
+#requestForm  {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 0 auto;
+}
+
+#requestForm form {
+  width: 65%;
+  min-width: 27rem;
+}
+
+.request-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 5rem;
+  margin-top: 1.25rem;
+
+}
+
+.request-buttons  {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+.radio-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: lightgray;
+  border-radius: 10px;
+  width: 30%;
+  padding: 1rem .25rem;
+}
+
+.form-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.form-buttons button  {
+  padding: .35rem .75rem;
 }
 
 /*Register.html Form style*/
@@ -439,7 +510,6 @@ footer a  {
 }
 
 footer div a:hover  {
-  font-size: 100%;
   color: yellow;
 }
 
@@ -447,6 +517,16 @@ footer div a:hover  {
   footer  {
     min-height: 10rem;
     top: 10rem;
+  }
+
+  footer div  {
+    flex-direction: row;
+    min-height: 4rem;
+    font-size: .8rem;
+  }
+
+  .footer-nav ul, .footer-legal ul {
+    font-size: .8rem;
   }
 }
 
