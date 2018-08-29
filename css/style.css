@@ -353,7 +353,6 @@ main  {
 
 #requestForm form {
   width: 65%;
-  min-width: 27rem;
 }
 
 .request-group {
@@ -392,6 +391,12 @@ main  {
 
 .form-buttons button  {
   padding: .35rem .75rem;
+}
+
+@media only screen and (max-width: 750px) {
+  #requestForm form {
+    width: 80%;
+  }
 }
 
 /*Register.html Form style*/
