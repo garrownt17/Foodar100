@@ -63,6 +63,7 @@ header  {
   align-items: center;
   height: 10vh;
   margin: 0 auto;
+  padding: .75rem 0;
   z-index: 10;
   background-color: white;
   width: 90%;
@@ -102,14 +103,11 @@ header nav ul li {
   }
 
   header img  {
-    width: 9rem;
+    width: 10rem;
   }
 
   nav ul {
-    flex-direction: column;
-    align-items: flex-start;
     width: auto;
-    font-size: 1rem;
     margin: 1rem auto;
   }
 }
@@ -121,7 +119,6 @@ header nav ul li {
   }
 
   nav ul  {
-    font-size: .8rem;
     flex-direction: row;
   }
 }
@@ -213,6 +210,11 @@ main  {
     width: 100%;
     border: none;
     border-radius: 0;
+  }
+
+  .banner-content p {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
@@ -571,8 +573,13 @@ footer div a:hover  {
     font-size: .7rem;
   }
 
+  .footer-nav, .footer-legal {
+    width: 40%;
+  }
+  
   .footer-nav ul, .footer-legal ul {
     font-size: .7rem;
+    width: 100%;
   }
 
   #footer h3 {
