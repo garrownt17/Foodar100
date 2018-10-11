@@ -28,7 +28,7 @@ function findDriver(){
         }
 
         if(inArea){
-          resultElem.innerHTML = "We cover that area!";
+          resultElem.innerHTML = "We cover that area! Start your order <a href=\"./request.html\" style=\"color: black; text-decoration:underline;font-weight:bold;\">now</a>!";
           resultElem.style.color = "green";
         } else {
           resultElem.innerHTML = "Unfortunately, you are not in a delivery zone";

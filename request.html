@@ -22,32 +22,32 @@
         <form id="foodForm" method="post">
           <div class="request-group">
             <h3>Name:</h3>
-            <input type="text">
+            <input type="text" required>
           </div>
           <div class="request-group">
             <h3>Email Address:</h3>
-            <input type="email">
+            <input type="email" required>
           </div>
           <div class="request-group">
             <h3>Type of Restaurant:</h3>
             <div class="request-buttons">
               <div class="radio-button">
-                  <label for="style">Fast-Food</label>
+                  <label for="style">Fast-Food<br>($)</label>
                   <input class="food-style" type='radio' name="rest-style" value="3"></input>
               </div>
               <div class="radio-button">
-                  <label for="style">Standard Sit-Down</label>
+                  <label for="style">Standard Sit-Down<br>($$)</label>
                   <input class="food-style" type='radio' name="rest-style" value="5"></input>
               </div>
               <div class="radio-button">
-                  <label for="style">Premium Cuisine</label>
+                  <label for="style">Premium Cuisine<br>($$$)</label>
                   <input class="food-style" type='radio' name="rest-style" value="10"></input>
               </div>
             </div>
           </div>
           <div class="request-group">
             <h3>Restaurant:</h3>
-            <input type="text"></input>
+            <input type="text" required>
           </div>
           <div class="request-group">
             <h3>Tip:</h3>
@@ -76,6 +76,8 @@
           <div class="form-buttons">
             <button onclick="resetForm()" type="reset">Reset</button>
             <button onclick="calculateTotal()" type="submit">Confirm Request</button>
+          </div>
+          <div id="order-message">
           </div>
         </form>
     </section>
